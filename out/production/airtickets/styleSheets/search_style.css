@@ -1,0 +1,43 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');*/
+
+.searchPanel{
+    -fx-background-image: url("/forms/fxml/Greece2.jpg");
+    -fx-background-image: url("/forms/fxml/Moscow.jpg");
+    -fx-background-image: url("/forms/fxml/Egypt.jpg");
+    /*-fx-background-repeat: no repeat;*/
+    -fx-background-size: cover;
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 16px;
+    -fx-line-height: 22px;
+    -fx-text-align: center;
+
+}
+.fromTextField{
+    -fx-effect: innershadow(three-pass-box,rgb(0 0 0 ), 10, 1, 2,2);
+}
+#searchButton{
+    -fx-background-color: #1e44d5;
+    -fx-border-color:  #091180 ;
+    -fx-border-width: 1 1 4 1;
+
+
+    -fx-border-radius: 4px;
+}
+#searchButton:hover{
+    -fx-background-color:#091180;
+}
+
+#mainMenuButton{
+    -fx-font-color: #091180;
+    -fx-border-color:#ccc ;
+    -fx-border-radius: 4px;
+    -fx-background-color: linear-gradient(to bottom, #fff, #d0c9c9);
+    -fx-background-radius: 5;
+}
+
+#mainMenuButton:hover{
+    -fx-background-color: #fff;
+}
+#mainMenuButton:focused{
+    -fx-background-color: linear-gradient(to top, #fff, #d0c9c9);
+}

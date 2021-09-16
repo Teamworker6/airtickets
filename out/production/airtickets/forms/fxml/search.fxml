@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="searchPanel" prefHeight="700.0" prefWidth="600.0" styleClass="searchPanel" stylesheets="@../../styleSheets/search_style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kg.asiaenterprice.airtickets.controller.SearchController">
+   <children>
+      <Label layoutX="122.0" layoutY="213.0" text="Search For Airline Tickets" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fromTextField" focusTraversable="false" layoutX="72.0" layoutY="308.0" prefHeight="30.0" prefWidth="200.0" promptText="Where from ?" style="-fx-background-radius: 3;" styleClass="fromTextField" />
+      <TextField fx:id="toTextField" focusTraversable="false" layoutX="329.0" layoutY="308.0" prefHeight="30.0" prefWidth="200.0" promptText="Where to ?" style="-fx-background-radius: 3;" />
+      <DatePicker fx:id="departureDatePicker" editable="false" focusTraversable="false" layoutX="72.0" layoutY="363.0" prefHeight="30.0" prefWidth="200.0" promptText="Departure" style="-fx-background-radius: 3;" />
+      <DatePicker fx:id="returnDatePicker" editable="false" focusTraversable="false" layoutX="329.0" layoutY="363.0" prefHeight="30.0" prefWidth="200.0" promptText="Return" style="-fx-background-radius: 3;" />
+      <Button id="searchButton" fx:id="searchButton" layoutX="136.0" layoutY="447.0" mnemonicParsing="false" onAction="#searchFlights" prefHeight="38.0" prefWidth="136.0" style="-fx-background-radius: 5;" text="Search Flights" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button id="mainMenuButton" fx:id="mainMenuButton" layoutX="329.0" layoutY="446.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="40.0" prefWidth="136.0" style="-fx-background-radius: 5;" text="Main menu" textAlignment="CENTER" textFill="#091180">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
